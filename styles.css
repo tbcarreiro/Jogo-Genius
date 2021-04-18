@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+}
+body {
+  background-color: rgb(211, 255, 240);
+  font-family: "Dela Gothic One", "Zen Dots";
+}
+
+.main-game {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.genius {
+  display: grid;
+  grid-template-areas:
+    "verde vermelho"
+    "amarelo azul";
+  gap: 10px;
+  margin-top: 10px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 50%;
+  width: 700px;
+  height: 700px;
+}
+
+.blue {
+  grid-area: azul;
+  background-color: blue;
+  border-bottom-right-radius: 100%;
+  opacity: 0.6;
+}
+
+.yellow {
+  grid-area: amarelo;
+  background-color: yellow;
+  border-bottom-left-radius: 100%;
+  opacity: 0.6;
+}
+
+.red {
+  grid-area: vermelho;
+  background-color: red;
+  border-top-right-radius: 100%;
+  opacity: 0.6;
+}
+
+.green {
+  grid-area: verde;
+  background-color: green;
+  border-top-left-radius: 100%;
+  opacity: 0.6;
+}
+
+.selected {
+  opacity: 1;
+}
+
+#score {
+  font-size: 2rem;
+  margin-top: 10px;
+  width: 250px;
+}
+#high-score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  width: 250px;
+  font-size: 2rem;
+}
+#high-score p {
+  padding-left: 5px;
+}
